@@ -9,8 +9,8 @@ menu.forEach(function(item,index) {
         currentIndex = index;
     }
     item.addEventListener("click", function() {
-        item.classList.add("active");
         menu[currentIndex].classList.remove("active");
+        item.classList.add("active");
         currentIndex = index;
     });
 });
